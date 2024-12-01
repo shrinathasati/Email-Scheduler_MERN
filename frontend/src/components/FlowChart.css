@@ -1,0 +1,152 @@
+/* General body and background */
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Container for the React Flow chart */
+  .w-full {
+    width: 100%;
+  }
+  
+  /* Flow chart container styling */
+  .ReactFlow {
+    background-color: #f4f4f4; /* Light background for the flow chart */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  /* Node styling (Lead Source, Cold Email, Wait/Delay) */
+  .react-flow__node {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    width: 300px; /* Fixed width for the nodes */
+  }
+  
+  .react-flow__node[data-type="Lead-Source"] {
+    background-color: #e0f7fa; /* Light cyan for Lead Source */
+    border: 2px solid #00838f; /* Blue border for Lead Source */
+  }
+  
+  .react-flow__node[data-type="Cold-Email"] {
+    background-color: #ffebee; /* Light pink for Cold Email */
+    border: 2px solid #d32f2f; /* Red border for Cold Email */
+  }
+  
+  .react-flow__node[data-type="Wait/Delay"] {
+    background-color: #fff3e0; /* Light orange for Wait/Delay */
+    border: 2px solid #ff6f00; /* Orange border for Wait/Delay */
+  }
+  
+  /* Styling for modal container */
+  .ReactFlow__modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #3c5b6f; /* Background color for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2b4351; /* Darker shade for hover effect */
+  }
+  
+  button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  /* Modal specific buttons */
+  button[type="submit"] {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+  
+  /* Select dropdown styling */
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Center-aligning the Add Node buttons */
+  .w-full.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  select {
+    width: auto;
+  }
+  
+  /* Controls at the top-right corner of the flow chart */
+  .react-flow__controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Background for the React Flow chart */
+  .react-flow__background {
+    background-color: #fafafa; /* Very light gray */
+  }
+  
+  /* Custom scrollbar styling for modal */
+  .ReactFlow__modal::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .ReactFlow__modal::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+  }
+  
+  .ReactFlow__modal::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
