@@ -57,7 +57,6 @@ The project also includes a **Login/Signup authentication feature** for managing
 ## Installation Instructions
 
 ### **Clone the Repository**
-```bash
 git clone https://github.com/shrinathasati/Email-Scheduler_MERN.git
 cd Email-Scheduler_MERN
 
